@@ -1,7 +1,6 @@
 import { StatusBar } from "react-native";
 import { Home } from "./src/screens/Home";
 import { useEffect, useState } from "react";
-import { Text, TouchableOpacity, View } from "react-native";
 import Loader from "./src/components/Task/loader";
 
 export default function App() {
@@ -10,7 +9,7 @@ export default function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1000);
   }, [loading]);
 
   return (
